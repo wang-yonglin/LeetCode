@@ -1,16 +1,20 @@
-package cn.leetcode.question876;
+package cn.leetcode.list.question19;
 
 public class App {
 
     public static void main(String[] args) {
 
-        int[] arr = {1, 2, 3, 4};
+        int[] arr = {1, 2, 3, 4, 5};
 
         ListNode list = initListNode(arr);
 
-        ListNode node = Solution1.middleNode(list);
 
-        System.out.println(node.val);
+        ListNode target = Solution1.removeNthFromEnd(list, 2);
+
+        while (target != null) {
+          System.out.print(target.val + " ");
+            target = target.next;
+        }
     }
 
 

@@ -1,4 +1,4 @@
-package cn.leetcode.question86;
+package cn.leetcode.list.question86;
 
 public class Solution1 {
 

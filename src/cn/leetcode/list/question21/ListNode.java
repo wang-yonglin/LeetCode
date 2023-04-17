@@ -1,4 +1,4 @@
-package cn.leetcode.question2;
+package cn.leetcode.list.question21;
 
 public class ListNode {
 
@@ -7,6 +7,7 @@ public class ListNode {
     ListNode next;
 
     ListNode() {
+
     }
 
     ListNode(int val) {

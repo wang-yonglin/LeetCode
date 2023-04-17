@@ -1,4 +1,4 @@
-package cn.leetcode.question23;
+package cn.leetcode.list.question23;
 
 import java.util.PriorityQueue;
 

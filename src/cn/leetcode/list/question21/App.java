@@ -1,26 +1,21 @@
-package cn.leetcode.question23;
+package cn.leetcode.list.question21;
 
 public class App {
 
     public static void main(String[] args) {
 
-        int[][] arr = {{1, 4, 5}, {1, 3, 4}, {2, 6}};
+        int[] arr1 = {1, 2, 4};
+        int[] arr2 = {1, 3, 4};
 
+        ListNode list1 = initListNode(arr1);
+        ListNode list2 = initListNode(arr2);
 
-        ListNode[] lists = new ListNode[arr.length];
-
-        for (int i = 0; i < arr.length; i++) {
-            lists[i] = initListNode(arr[i]);
-        }
-
-        ListNode list = Solution1.mergeKLists(lists);
+        ListNode list = Solution1.mergeTwoLists(list1, list2);
 
         while (list != null) {
           System.out.print(list.val + " ");
           list = list.next;
         }
-
-        System.out.println();
     }
 
 
