@@ -11,8 +11,10 @@ public class App {
 
         TreeNode tree = create(arr);
 
-        Solution1 solution1 = new Solution1();
-        int maxDepth = solution1.maxDepth(tree);
+//        Solution1 solution1 = new Solution1();
+//        int maxDepth = solution1.maxDepth(tree);
+
+        int maxDepth = Solution2.maxDepth(tree);
 
         System.out.println(maxDepth);
     }
